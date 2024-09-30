@@ -1,0 +1,23 @@
+{
+  "name": "solution_piece",
+  "version": "1.0.0",
+  "description": "Support de Code pour le cours OpenClassrooms Creez des pages web dynamiques avec javascript",
+  "main": "pieces.js",
+  "scripts": {
+    "start":"http-server",
+    "dev":"http-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/babacar001/solution_piece.git"
+  },
+  "author": "Babacar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/babacar001/solution_piece/issues"
+  },
+  "homepage": "https://github.com/babacar001/solution_piece#readme",
+  "dependencies": {
+    "http-server": "^14.1.1"
+  }
+}
