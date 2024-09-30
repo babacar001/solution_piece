@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
 body {
@@ -53,3 +54,9 @@ main {
 	margin-top: 4px;
 	margin-bottom: 4px;
 }
+=======
+.container{
+    display: flex;
+    background-color: aliceblue;
+}
+>>>>>>> ea172b2e098203386a576f1e58dbf474d2bd0789
