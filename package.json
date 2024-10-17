@@ -4,8 +4,9 @@
   "description": "Support de Code pour le cours OpenClassrooms Creez des pages web dynamiques avec javascript",
   "main": "pieces.js",
   "scripts": {
-    "start":"http-server",
-    "dev":"http-server"
+    "start": "http-server",
+    "dev": "http-server",
+    "lint": "eslint *.js"
   },
   "repository": {
     "type": "git",
@@ -18,7 +19,13 @@
   },
   "homepage": "https://github.com/babacar001/solution_piece#readme",
   "dependencies": {
+    "chart.js": "^4.4.5",
     "http-server": "^14.1.1"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.12.0",
+    "eslint": "^9.12.0",
+    "eslint-plugin-react": "^7.37.1",
+    "globals": "^15.11.0"
   }
-  
 }

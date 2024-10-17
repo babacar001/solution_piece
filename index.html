@@ -9,7 +9,8 @@
          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
          <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
           integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-         <script type="module" src="pieces.js"></script>
+		  <script src="node_modules/chart.js/dist/chart.umd.js" defer></script>
+		  <script type="module" src="pieces.js"></script>
 	</head>
 	<body>
 		<header>
@@ -19,7 +20,7 @@
 		<main>
 			<!-- Menu de recherche -->
 			<section class="filtres">
-				<h3><u>Filtres</u></h3>
+				<h3>Filtres</h3>
 				<button class="btn-trier">Trier par prix croissant</button>
 				<br>
 				<button class="btn-filtrer">Filtrer les pièces non abordables</button>
@@ -27,12 +28,40 @@
 				<button class="btn-decroissant">Trier par prix décroissant</button>
 				<br>
 				<button class="btn-nodesc">Filtrer les pièces sans description</button>
+				<br>
+				<p>Prix maximum: </p>
+				<input type="range" name="prix-max" id="prix-max" min="0" max="60" step="5">
+				<!-- code a ajouter -->
+				<h3>Ajouter un avis</h3>
+				<form class="formulaire-avis">
+					Identifiant de la pièce :<br>
+					<input type="number" name="piece-id"><br>
+					Nom d'utilisateur :<br>
+					<input type="text" name="utilisateur"><br>
+					Avis :<br>
+					<input type="text" name="commentaire"><br>
+					Note: <br>
+					<input type="number" name="nbEtoiles" id="" min="0" max="5"> <br> <br>
+					<button>Envoyer</button>
+				</form>
+				<!-- code à ajouter-->
+				<h3>Données</h3>
+				<button class="btn-maj">Mettre à jour les pièces</button>
+				<!-- code à ajouter-->
+				<h3>Aperçu des avis</h3>
+				<canvas id="graphique-avis" width="300" height="300"></canvas>
+				<h3>Aperçu des commentaires</h3>
+				<canvas id="graphique-dispo" width="300" height="300"></canvas>
 			</section>
 
 			<!-- Fiches produits -->
 			<section class="fiches">
+				<!-- Code ajouté -->
 				<div class="abordables">
-					<p>Pièces abordables :</p>
+
+				</div>
+				<div class="disponibles">
+					
 				</div>
 			</section>
 		</main>
